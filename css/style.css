@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Roboto:wght@100&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5%;
+  background: #00000026;
+  float: left;
+  position: fixed;
+}
+
+header #logo {
+  color: #fff;
+  cursor: pointer;
+}
+
+header #logo span {
+  font-size: 1.7em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: "Bakbak One", sans-serif;
+}
+
+@media (min-width: 700px) {
+  #logo {
+    float: left;
+    width: 30%;
+    font-size: 1.1em;
+  }
+  #about {
+    float: right;
+    width: 67%;
+  }
+}
+
+@media (max-width: 699px) {
+  #logo {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1.5em;
+  }
+  #about {
+    float: left;
+    width: 100%;
+  }
+}
+
+#about {
+text-align: center;
+font-size: 1em;
+line-height: 40px;
+margin-bottom: 10px;
+}
+.active {
+  background-color: #c8c8c847;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#about > a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Bakbak One", sans-serif;
+}
+
+#about > a:hover {
+  color: #b0b0b0;
+  text-decoration: underline;
+}
+
+#about > a:not(:last-child) {
+  margin-right: 7%;
+}
+
+#top {
+  width: 100%;
+  background-image: url(https://images.ua.prom.st/2862166222_2862166222.jpg);
+  background-blend-mode: multiply;
+  background-color: #2e3a44;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+}
+@media (min-width: 1000px) {
+#top {
+  font-size: 3em;
+  height: 600px;
+}
+}
+
+@media (max-width: 999px) and (min-width: 701px) {
+#top {
+  font-size: 2em;
+  height: 500px;
+}
+}
+
+@media (max-width: 700px) {
+#top {
+  font-size: 1.3em;
+  padding-top: 50%;
+  height: 400px;
+}
+}
+
+#top h1 {
+  padding-top: 20%;
+}
+
+#top h3 {
+  color: #c8c4c4;
+}
+
+#main {
+padding: 100px 20%;
+width: 60%;
+float: left;
+background-color: #f6f6f6;
+border-top: 2px solid silver;
+color: #4d4b4b;
+text-align: center;
+font-family: "Bakbak One", sans-serif;
+}
+#main span {
+  font-weight: bold;
+}
+
+@media (min-width: 1000px) {
+#main {
+  font-size: 1.5em;
+}
+}
+
+@media (max-width: 999px) and (min-width: 701px) {
+#main {
+  font-size: 1.2em;
+}
+}
+
+@media (max-width: 700px) {
+#main {
+  font-size: 1em;
+  padding-top: 20%;
+}
+}
+
+#container {
+  float: left;
+  background-image: url(https://images.ua.prom.st/3420448960_shapka-gruzchik.jpg);
+  background-blend-mode: multiply;
+  background-color: #2a353e;
+  background-size: cover;
+  background-attachment: fixed;
+  padding:  100px 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+#container h2 {
+  font-size: 4em;
+}
+#container h3 {
+  color: #c8c4c4;
+  font-size: 1.5em;
+}
+
+#container .img {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+#container .img:nth-child(odd) {
+  margin-left:  18%;
+}
+
+#container img {
+  background:#fafafa05;
+  padding: 5px;
+  border:  2px solid silver;
+  border-radius: 15px;
+  float: left;
+  width: 100%;
+  max-width: 500px;
+  transition: 1s;
+}
+
+#container img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background: rgba(0,0,0,0.5)
+}
+
+#container a {
+  text-align: center;
+  text-decoration: none;
+  float: left;
+  width: 100%;
+  font-size: 2em;
+  margin-top: 10px;
+  padding-left: 3px;
+  font-family: "Bakbak One", sans-serif;
+  cursor: pointer;
+  color: #fff;
+}
+
+#container a:hover {
+color: #b0b0b0;
+text-decoration: underline;
+}
+
+
+
+@media (max-width: 700px) {
+  #container .img {
+    width: 70%;
+    margin-right: 0;
+    margin-left: 15%;
+  }
+  #container a {
+  font-size: 1.3em;}
+
+  #container h2 {
+    font-size: 2em;
+  }
+  #container h3 {
+    font-size: 1em;
+  }
+  #container .img:nth-child(odd) {
+    margin-left:  15%;
+  }
+}
+
+
+
+@media (max-width: 999px) and (min-width: 701px) {
+  #container h2 {
+    font-size: 2.8em;
+  }
+  #container h3 {
+    font-size: 1.4em;
+  }
+  #container a {
+  font-size: 1.6em;
+  }
+}
+
+footer {
+  display: flex;
+  background-color: #fff;
+  width: 100%;
+  border-top: 2px solid silver;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+}
+
+footer div {
+  width: 32%;
+  margin-left: 15%;
+  float: left;
+}
+
+.contacts li {
+  list-style-type: none;
+  padding-top: 5px;
+  font-family: "Bakbak One", sans-serif;
+  color: #5d5a59;
+}
+.contacts li:nth-child(odd) {
+  color: #000000;
+}
+.contacts p {
+  color: #5d5a59;
+  padding-bottom: 5px;
+}
+.contacts a {
+  text-decoration: none;
+  color: #52504f;
+}
+
+.contacts a:hover {
+  cursor: pointer;
+  color: #b54834;
+  text-decoration: underline;
+}
+.working li {
+  list-style-type: none;
+  padding-top: 5px;
+  color: #52504f;
+  font-family: "Bakbak One", sans-serif;
+}
+
+.working p {
+  color: #000000;
+  padding-bottom: 5px;
+}
+
+@media (max-width: 700px) {
+  footer {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+
+}
+
+.contacts {font-size: 0.8em;
+  margin-left: 0px;
+}
+.working {font-size: 0.8em;
+}
+}
+
+@media (max-width: 999px) and (min-width: 701px) {
+.contacts {font-size: 1.2em;}
+.working {font-size: 1.2em;}
+}

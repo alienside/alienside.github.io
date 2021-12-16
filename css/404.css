@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Roboto:wght@100&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+  min-height: 100vh;
+  background-image: url(../img/5.jpg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+
+}
+
+.container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff4f4cc;
+}
+
+.container h1 {
+  font-size: 160px;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 20px;
+  background: #ffffff;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.container p {
+  font-size: 20px;
+  }
+
+.container a {
+  text-decoration: none;
+  background: #a4aaa457;
+  padding: 13px;
+  color: #fff;
+  display: inline-block;
+  border-radius: 25px;
+  text-transform: uppercase;
+  transition: 0.4s
+}
+
+.container a:hover {
+  background: #b5b5b5c4;
+}
+
+@media (max-width: 700px) {
+  body {background-size: 100% 100%;}
+
+.container h1 {font-size: 140px;
+letter-spacing: 15px;
+}
+.container h2 {
+  font-size: 20px;
+}
+.container p {
+  font-size: 15px;
+  }
+  .container a {
+    font-size: 12px;
+    }
+}

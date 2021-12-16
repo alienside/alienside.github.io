@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Roboto:wght@100&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5%;
+  background: #00000026;
+  float: left;
+  position: fixed;
+  z-index: 5;
+}
+
+header #logo {
+  color: #fff;
+  cursor: pointer;
+}
+
+header #logo span {
+  font-size: 1.7em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: "Bakbak One", sans-serif;
+}
+
+@media (min-width: 700px) {
+  #logo {
+    float: left;
+    width: 30%;
+    font-size: 1.1em;
+  }
+  #about {
+    float: right;
+    width: 67%;
+  }
+}
+
+@media (max-width: 699px) {
+  #logo {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1.5em;
+  }
+  #about {
+    float: left;
+    width: 100%;
+  }
+}
+
+#about {
+text-align: center;
+font-size: 1em;
+line-height: 40px;
+margin-bottom: 10px;
+}
+
+.active {
+  background-color: #c8c8c847;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px;
+}
+#about > a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Bakbak One", sans-serif;
+}
+
+#about > a:hover {
+  color: #b0b0b0;
+  text-decoration: underline;
+}
+
+#about > a:not(:last-child) {
+  margin-right: 7%;
+}
+
+#top {
+  width: 100%;
+  background-image: url(https://images.ua.prom.st/2862166222_2862166222.jpg);
+  background-blend-mode: multiply;
+  background-color: #2e3a44;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+}
+@media (min-width: 1000px) {
+#top {
+  font-size: 3em;
+  height: 600px;
+}
+}
+
+@media (max-width: 999px) and (min-width: 701px) {
+#top {
+  font-size: 2em;
+  height: 500px;
+}
+}
+
+@media (max-width: 700px) {
+#top {
+  font-size: 1.3em;
+  padding-top: 50%;
+  height: 400px;
+}
+}
+
+#top h1 {
+  padding-top: 20%;
+}
+
+#top h3 {
+  color: #ccc;
+}
+
+
+#main {
+padding: 20px 20%;
+width: 60%;
+float: left;
+background-color: #f6f6f6;
+border-top: 2px solid silver;
+border-bottom: 2px solid silver;
+color: #484848;
+text-align: center;
+font-family: "Bakbak One", sans-serif;
+max-height: 800px;
+}
+
+@media (min-width: 1000px) {
+#main {
+  font-size: 1.5em;
+}
+#main div p:nth-child(7) {
+  display: none;
+}
+}
+
+
+@media (max-width: 999px) and (min-width: 701px) {
+#main {
+  font-size: 1.2em;
+}
+#main div p:nth-child(7) {
+  display: none;
+}
+#main iframe {
+  text-align: center;
+  margin-left: -50px;
+}
+}
+
+@media (max-width: 700px) {
+#main {
+  font-size: 1em;
+  padding-top: 10%;
+}
+#main iframe {
+  display: none;
+}
+}
+
+#contacts {
+  box-sizing: border-box;
+  border: 1px solid silver;
+  text-align: center;
+  color: #484848;
+  font-family: "Bakbak One", sans-serif;
+}
+#contacts div {
+  padding: 0.2em;
+}
+#contacts h2 {
+  padding-left: 70px;
+}
+
+form {
+  font-size: 1.1em;
+}
+input {
+  font: 2em Roboto, sans-serif;
+  width: 30%;
+  box-sizing: border-box;
+  border: 1px solid #777;
+}
+input:focus {
+  border-color: rgb(255, 255, 0);
+}
+label span {
+  width: 100px;
+  text-align: right;
+  display: inline-block;
+  padding-right: 15px;
+  }
+
+textarea {
+font: 2em Roboto, sans-serif;
+width: 30%;
+box-sizing: border-box;
+border: 1px solid #777;
+}
+
+button[name="send_subject"] {
+    border: none;
+    border-radius: 7px;
+    padding: 10px 25px;
+    background: #f22a1d;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+  }
+  button[name="send_subject"]:hover {
+    background: #a1511b;
+  }
+
+@media (min-width: 1000px) {
+  #contacts {
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 999px) and (min-width: 701px) {
+    #contacts h2{
+      font-size: 1.2em;
+    }
+    #contacts input {
+      font: 1em Roboto, sans-serif;
+      width: 30%;
+      box-sizing: border-box;
+      border: 1px solid #777;
+    }
+  }
+
+  @media (max-width: 700px) {
+    #contacts input{
+      font: 1em Roboto, sans-serif;
+    width: 30%;
+    text-align: center;
+  }
+    #contacts h2{
+    font-size: 1em;
+    padding-left: 10px;
+    }
+    #contacts textarea {
+    font: 1em Roboto, sans-serif;
+    width: 30%;
+    text-align: center;
+    }
+    #contacts button {
+    width: 30%;
+    padding: 10px;}
+    }
+
+footer {
+    background-color: #fff;
+    width: 100%;
+    border-top: 2px solid silver;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer div {
+    width: 100%;
+}
+
+.working li {
+    list-style-type: none;
+    padding-top: 5px;
+    color: #52504f;
+    font-family: "Bakbak One", sans-serif;
+}
+
+.working p:last-child {
+    color: #030303;
+    font-family: "Bakbak One", sans-serif;
+  }
+
+
+@media (max-width: 999px) and (min-width: 701px) {
+      footer .working ul li{
+      text-align: center;
+      width: 100%
+      }
+    }
+
+@media (max-width: 700px) {
+      footer{
+
+        text-align: center;
+        width: auto;
+      }
+      }
